@@ -1,8 +1,6 @@
 /*
 Finite difference calculator with varying orders of accuracy,
-Designed for use with the sensitivity-analysis package,
-for the Deterministic simulator of zebrafish segmentation
-Copyright (C) 2013 Ahmet Ay, Jack Holland, Adriana Sperlea, Sebastian Sangervasi
+Copyright (C) 2013 Sebastian Sangervasi
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -25,13 +23,10 @@ finite-difference.hpp contains function declarations, macros, and structs for fi
 #ifndef FINITE_DIFFERENCE_HPP
 #define FINITE_DIFFERENCE_HPP
 
-//This if checks to see if the sensitivity analysis init.hpp file has already been included -- if so, these libraries don't need to be included again.
-#ifndef INIT_HPP
 #include <stdlib.h>
 #include <cstring>
 #include <cmath>
 #include <errno.h>
-#endif
 
 //Min and max accuracy macros and a nested boolean function that returns min if num<min, max if max<num, and num otherwise.
 #define ACC_MAX 8
